@@ -9,7 +9,10 @@
         <!-- eslint-disable-next-line -->
         <FoodList/>
       </b-tab>
-      <b-tab title="Goal"></b-tab>
+      <b-tab title="Goal">
+        <!-- eslint-disable-next-line -->
+        <Goal/>
+      </b-tab>
       <b-tab title="Calendar">
         <!-- eslint-disable-next-line -->
         <Calendar/>
@@ -26,12 +29,14 @@
 <script>
 import Calendar from "@/components/calendar/Calendar";
 import FoodList from "@/components/food/FoodList";
+import Goal from "@/components/goal/Goal";
 
 export default {
   name: "App",
   components: {
     Calendar,
-    FoodList
+    FoodList,
+    Goal
   }
 };
 </script>

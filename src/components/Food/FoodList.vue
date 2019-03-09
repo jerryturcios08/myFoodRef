@@ -1,13 +1,18 @@
 <template>
   <div class="foodList">
     <ul>
+      <i class="fas fa-plus-circle fa-3x"></i>
       <!-- <li v-for="foodItem in foodList" v-bind:key="foodList.indexOf(foodItem)"> -->
       <!-- eslint-disable-next-line -->
       <FoodItem name="Salad" description="A ceasar salad." date="3/6/2019"/>
       <!-- eslint-disable-next-line -->
-      <FoodItem name="Burger" description="Now that's a tasty burger." date="1/2/2019"/>
+      <FoodItem name="Burger" description="Now that's a tasty burger." date="9/23/1994"/>
       <!-- eslint-disable-next-line -->
-      <FoodItem name="Willy Wanka's Kandy" description="NEEEERDS!" date="12/23/2018"/>
+      <FoodItem
+        name="Willy Wanka's Kandy"
+        description="We are the music-makers and we are the dreamers of dreams"
+        date="6/30/1971"
+      />
       <!-- </li> -->
     </ul>
   </div>
@@ -30,6 +35,15 @@ export default {
 </script>
 
 <style scoped>
+i {
+  color: rgb(51, 122, 246);
+  margin: 0.5em 0;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
 .foodList {
   position: relative;
 }
