@@ -1,15 +1,14 @@
 <template>
   <div id="app">
-    <div>
-      <b-tabs card>
-        <b-tab title="Tab 1" active>
-          <!-- <b-card-text>Tab Contents 1</b-card-text> -->
-        </b-tab>
-        <b-tab title="Tab 2">
-          <!-- <b-card-text>Tab Contents 1</b-card-text> -->
-        </b-tab>
-      </b-tabs>
+    <div id="header">
+      <i class="far fa-user-circle fa-2x"></i>
+      <p id="brand-name">myFoodRef</p>
     </div>
+    <b-tabs card>
+      <b-tab title="Food" active></b-tab>
+      <b-tab title="Goal"></b-tab>
+      <b-tab title="Calender"></b-tab>
+    </b-tabs>
     <!-- <div id="nav">
       <router-link to="/">Home</router-link>
     </div>-->
@@ -19,6 +18,25 @@
 </template>
 
 <style>
+i {
+  float: left;
+  padding: 1vh 2vh;
+}
+
+p {
+  padding: 1vh 2vh;
+  text-align: right;
+  font-weight: bold;
+}
+
+#brand-name {
+  margin: 0vh;
+}
+
+#header {
+  background-color: rgb(247, 247, 247);
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
