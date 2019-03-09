@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 i {
   float: left;
   padding: 1vh 2vh;
