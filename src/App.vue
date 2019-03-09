@@ -1,10 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div>
+      <b-tabs card>
+        <b-tab title="Tab 1" active>
+          <!-- <b-card-text>Tab Contents 1</b-card-text> -->
+        </b-tab>
+        <b-tab title="Tab 2">
+          <!-- <b-card-text>Tab Contents 1</b-card-text> -->
+        </b-tab>
+      </b-tabs>
     </div>
-    <router-view />
+    <!-- <div id="nav">
+      <router-link to="/">Home</router-link>
+    </div>-->
+    <!-- eslint-disable-next-line -->
+    <!-- <router-view/> -->
   </div>
 </template>
 
@@ -16,6 +26,7 @@
   text-align: center;
   color: #2c3e50;
 }
+
 #nav {
   padding: 30px;
 }
