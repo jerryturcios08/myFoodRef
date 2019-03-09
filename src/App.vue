@@ -5,7 +5,10 @@
       <p id="brand-name">myFoodRef</p>
     </div>
     <b-tabs card>
-      <b-tab title="Food" active></b-tab>
+      <b-tab title="Food" active>
+        <!-- eslint-disable-next-line -->
+        <FoodList/>
+      </b-tab>
       <b-tab title="Goal"></b-tab>
       <b-tab title="Calender"></b-tab>
     </b-tabs>
@@ -16,6 +19,17 @@
     <!-- <router-view/> -->
   </div>
 </template>
+
+<script>
+import FoodList from "@/components/food/FoodList";
+
+export default {
+  name: "App",
+  components: {
+    FoodList
+  }
+};
+</script>
 
 <style>
 i {
