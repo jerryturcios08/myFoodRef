@@ -4,6 +4,21 @@
   </div>
 </template>
 
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyAuTVqmdGYouPEpw9RK0OZnRET6-s5h4Lk",
+  authDomain: "myfoodref.firebaseapp.com",
+  databaseURL: "https://myfoodref.firebaseio.com",
+  projectId: "myfoodref",
+  storageBucket: "myfoodref.appspot.com",
+  messagingSenderId: "1006747319700"
+};
+firebase.initializeApp(config);
+var database = firebase.database();
+</script>
+
 <script>
 var currentDate = new Date();
 var year = currentDate.getFullYear();
@@ -18,7 +33,7 @@ export default {
         {
           key: "today",
           dates: new Date(year, month, day),
-          //dates: new Date(2019, 2, 13),
+
           highlight: {
             backgroundColor: "#ff8080"
           },
@@ -28,7 +43,7 @@ export default {
           },
           // Our new popover here
           popover: {
-            label: "You just hovered over today's date!"
+            label: "Breakfast: cheese"
           }
         }
       ]
