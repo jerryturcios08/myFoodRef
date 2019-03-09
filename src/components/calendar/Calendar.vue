@@ -12,11 +12,18 @@ export default {
       attrs: [
         {
           key: "today",
+          dates: new Date(2019, 2, 9),
           highlight: {
             backgroundColor: "#ff8080"
-            // Other properties are available too, like `height` & `borderRadius`
           },
-          dates: new Date(2018, 0, 1)
+          // Just use a normal style
+          contentStyle: {
+            color: "#fafafa"
+          },
+          // Our new popover here
+          popover: {
+            label: "You just hovered over today's date!"
+          }
         }
       ]
     };
