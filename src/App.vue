@@ -10,7 +10,10 @@
         <FoodList/>
       </b-tab>
       <b-tab title="Goal"></b-tab>
-      <b-tab title="Calender"></b-tab>
+      <b-tab title="Calendar">
+        <!-- eslint-disable-next-line -->
+        <Calendar/>
+      </b-tab>
     </b-tabs>
     <!-- <div id="nav">
       <router-link to="/">Home</router-link>
@@ -21,11 +24,13 @@
 </template>
 
 <script>
+import Calendar from "@/components/calendar/Calendar";
 import FoodList from "@/components/food/FoodList";
 
 export default {
   name: "App",
   components: {
+    Calendar,
     FoodList
   }
 };
