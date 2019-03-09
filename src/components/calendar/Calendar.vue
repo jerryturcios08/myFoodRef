@@ -5,6 +5,11 @@
 </template>
 
 <script>
+var currentDate = new Date();
+var year = currentDate.getFullYear();
+var month = currentDate.getMonth();
+var day = currentDate.getDate();
+
 export default {
   name: "Calendar",
   data() {
@@ -12,7 +17,8 @@ export default {
       attrs: [
         {
           key: "today",
-          dates: new Date(2019, 2, 9),
+          dates: new Date(year, month, day),
+          //dates: new Date(2019, 2, 13),
           highlight: {
             backgroundColor: "#ff8080"
           },
